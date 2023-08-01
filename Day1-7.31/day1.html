@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XinBao Chen</title>
+</head>
+<body>
+    <h1>Images in HTML</h1>
+    <p>Add images into a webpage</p>
+    <img src="../images/puppygrass.jpg" alt="photo of puppy on grass" title="Puppy on grass" width="50%">
+    <figure>
+        <img src="../images/puppygrass.jpg" alt="photo of puppy on grass" title="Puppy on grass" width="60%">
+        <img src="../images/puppygrass.jpg" alt="photo of puppy on grass" title="Puppy on grass" width="50%">
+        <img src="../images/puppygrass.jpg" alt="photo of puppy on grass" title="Puppy on grass" width="40%">
+        <figcaption>
+            Picture of puppy on grass
+        </figcaption>
+    </figure>
+     <h1 id="pictTag">Picture tag</h1>
+    <p>Resize the browser window to load different photos of dogs</p>
+    <picture>
+        <source media="(min-width: 1100px)" srcset="../images/doglaying.jpg">
+        <source media="(min-width: 800px)" srcset="../images/puppygrass.jpg">
+        <source media="(min-width: 500px)" srcset="../images/purebreddog.jpg">
+        <img src="../images/doggrass.jpg" alt="photo of puppy on grass" style="width: 40%">
+    </picture>
+     <!-- Use the figure and figcaption tags to add captions for your pictures -->
+    <h1 id="links"> Link to other sites</h1>
+    <a href="http://www.qcc.cuny.edu" target="_blank" rel="noopenernoreferrer">Visit QCC Website</a>
+    <p>
+        <a href="mailto:hwu@qcc.cuny.edu">Email to prof.Wu</a>
+    </p>
+    <p>Follow us:</p>
+    <figure>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+            <img src="../images/instrgamicon.svg" alt="Follow us on Instagram" width="40%">
+        </a>
+        <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+            <img src="../images/twitterlogo.svg" alt="Follow us on Twitter" width="40%">
+        </a>
+    </figure>
+     <!-- Links -->
+    <h1>Link to a specific part of the same web page</h1>
+    <ul>
+        <li>
+            <a href="#">Top of the page</a>
+        </li>
+        <li>
+            <a href="#pictTag">Picture Tag</a>
+        </li>
+        <li>
+            <a href="#links">Links</a>
+        </li>
+    </ul>
+     <h1>Map tag</h1>
+    <figure>
+        <img src="../images/doggrass.jpg" width="500px" usemap="#doggrass"> 
+    </figure>
+    <map name="doggrass">
+        <area shape="rectangle" coords="200px,20px, 360px, 120px" href="https://www.bestpuppy.com/" target="_blank" rel="noopener noreferrer">
+        <area shape="circle" coords="100px,150px,210px,30px" href="https://littlelearningcorner.com/2022/01/25-fun-puppy-facts-for-kids.html" target="_blank" rel="noopener noreferrer">
+    </map>
+    <hr>
+    <footer>HTML review @ XinBao Chen</footer>
+ </body>
+</html>

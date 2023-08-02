@@ -1,0 +1,132 @@
+body{
+    background-color: rgb(167, 230, 209);
+}
+p{
+    color: blue;
+}
+h2.para1{
+    background-color: azure;
+}
+.para1{
+    background-color: hotpink;
+}
+.para3{
+    background-color: salmon;
+}
+#para2{
+    color: darkgoldenrod;
+}
+/* change everything */
+/* *{
+    text-align: center;
+} */
+h1,.para1,.para3{
+    text-align: center;
+}
+
+/* Combinator selector */
+/* li a{
+    background-color: blueviolet;
+}
+div + p{
+    background-color: beige;
+}
+div > p {
+    color: yellow;
+}
+div ~ p {
+    color: navajowhite;
+} */
+
+a[href="mailto:hwu@qcc.cuny.edu"]{
+    background-color: aqua;
+}
+
+/* pseudo classs selectors */
+
+.qccLink{
+    color: bisque;
+    background-color: blanchedalmond;
+}
+.qccLink:visited{
+    background-color: black;
+}
+.qccLink:hover{
+    background-color: greenyellow;
+}
+.qccLink:active{
+    background-color: brown;
+}
+
+.hiddenPar{
+    color: blueviolet;
+    background-color: violet;
+    display: none;
+}
+
+.tooltipDiv:hover .hiddenPar{
+    display: block;
+}
+
+
+/* text and font properties */
+.subtitle{
+    font-family: serif;
+}
+.intro, . .author{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.author{
+    font-size: 25px;
+    font-weight: 800;
+    font-style: italic;
+}
+
+/* element properties */
+.shadow{
+    width: 300px;
+    height: 100px;
+    text-align: center;
+    background-color: white;
+    box-shadow: 20px -10px 15px khaki;
+}
+
+.hoverme{
+    background-color: coral;
+    color: azure;
+    box-shadow: 0px 0px 10px 2px lightblue;
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+    pad: 1em;
+    border-radius: 20px;
+}
+
+.hoverme:hover{
+    box-shadow: 0px 0px 4px 1px linen
+}
+
+/* cards */
+.card{
+    width: 30%;
+    box-shadow: 0px 0px 3px lightsalmon, 2px 3px, 5px, limegreen;
+}
+.imgcard{
+    width: 100%;
+}
+.cardinfo{
+    text-align: center;
+}
+.card:hover{
+    box-shadow: 2px 2px 1px blue;
+}
+
+/* box properties */
+.box{
+    background-color: tomato;
+    border: 14px orangered solid;
+    margin-top: 4px;
+    margin: 1em;
+    padding-left:  3em;
+    padding: 2em;
+}

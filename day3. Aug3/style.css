@@ -1,0 +1,151 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+img{
+    width: 100%;
+    display: block;
+}
+/* card css */
+.card{
+    width: 22%;
+    box-shadow: 0px 0px 5px 1px gray;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 2% 0%;
+    transition: ease 400ms;
+}
+
+.card:hover{
+    box-shadow: 0px 0px 5px 1px black;
+    transform: scale(1.05);
+}
+.cardContent{
+    padding: 0.5em 0.8em;
+}
+.cardContent p:nth-child(1){
+    color: aqua;
+    font-size: 1.5em;
+    font-weight: 800;
+}
+.cardContent p:nth-child(2){
+    color: bisque;
+}
+.cardContainer{
+    display: flex;
+    width: 90%;
+    margin: 5em auto;
+    justify-content: space-evenly;
+    /* flex wrap is used to make the website flexible to display a good amount of pic*/
+    flex-wrap: wrap;
+}
+
+/* images card */
+.imgCard{
+    width: 45%;
+    box-shadow: 1px 1px 5px rgb(100,100,100);
+    border-radius:  5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.imgCardContent{
+    position: absolute;
+    background-color: rgba(200,144,60,.5);
+    top: 20%;
+    bottom: 30%;
+    left: 30%;
+    right: 30%;
+    text-align: center;
+    
+}
+.p1-content{
+    color: whitesmoke;
+    font-size: 2em;
+}
+.p2-content{
+    color: green;
+    font-size: 1em;
+}
+
+.imgCardContent2{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+
+    /* background-color: aliceblue; */
+}
+.p1-content2{
+    color: cornflowerblue;
+    font-size: 2em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 900;
+}
+.p2-content2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: whitesmoke;
+    font-weight: 300;
+    margin-top: -2em;
+}
+
+.imgCard:hover .p1-content2{
+    color: deepskyblue;
+    font-size: 2.1em;
+}
+
+.imgCard:hover{
+    box-shadow: none;
+    border: ridge 3px orange;
+}
+
+/* element animation */
+.square{
+    width: 200px;
+    height: 200px;
+    background-color: bisque;
+    transition: ease 2s ;
+}
+
+.square:hover{
+    border-radius: 50%;
+}
+
+/* zoom animation */
+
+.zoomContainer{
+    width: 300px;
+    height: 300px;
+    position: relative;
+    margin: 4em;
+    overflow: hidden;
+}
+.zoomMsg, .slideMsg{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    bottom: 0%;
+    right: 0%;
+    background-color: rgba(50,50,60,.6);
+    font-size: 2em;
+    color: blanchedalmond;
+    text-align: center;
+    padding-top: 20%;
+    transition: ease 100ms;
+}
+.zoomMsg{
+    transform: scale(0);
+}
+
+
+.zoomContainer:hover .zoomMsg{
+    transform: scale(1);
+}
+
+/* slide fun */
+.slideMsg:hover{
+    transform: translate(300px);
+}
+
+

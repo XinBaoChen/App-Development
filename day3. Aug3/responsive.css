@@ -1,0 +1,42 @@
+@media screen and (min-width: 1000px) {
+    body{
+        background-color: darksalmon;
+    }
+    .title{
+        color: yellow;
+        text-align: center;
+    }
+    .card{
+        width: 45%;
+    }
+}
+
+@media screen and (max-width:700px) {
+    body{
+        background-color: yellowgreen;
+    }
+    .title{
+        text-align: center;
+        color: red;
+    }
+    .card{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    body{
+        background-color: aliceblue;
+    }
+    .title{
+        text-align: center;
+        font-size: 1.5em;
+        color: violet;
+    }
+    .cardContent p:nth-child(1){
+        font-size: 1.2em;
+    }
+    .card{
+        width: 100%;
+    }
+}

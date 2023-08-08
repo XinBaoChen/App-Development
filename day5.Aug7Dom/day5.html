@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XinBao Chen</title>
+    <style>
+        .subtitle{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+        font-size: 2em;
+        }
+        .guessNumber{
+            width: 200px;
+            height: 200px;
+            padding: 10%;
+            text-align: center;
+            font-size: 5em;
+            color: blanchedalmond;
+            background-color: aquamarine;
+            margin-bottom: 0.4em;
+        }
+        .top{
+            position: fixed;
+            bottom: 2%;
+            right: 2%;
+            background-color: rgba(20,20,20,0.5);
+            font-size: 2.4em;
+            border-radius: 50%;
+            overflow: hidden;
+            padding: 0.2em;
+            transition: ease 400ms;
+            display: none;
+        }
+        .top a{
+            text-decoration: none;
+
+        }
+        .top:hover{
+            opacity: 0.7;
+            box-shadow: 0px 0px 2px 2px black;
+            transform: scale(0.7);
+        }
+    </style>
+</head>
+<body>
+    <h1>XinBao Chen</h1>
+    <div id="userName">
+    <p>First Name</p>
+    <p class="subtitle">Last Name</p>
+    <p class="name1">Full Name</p>
+</div>
+<h2>Parent/ sibling / child</h2>
+<p>Fruit shopping list</p>
+<ul>
+    <li>Apple</li>
+    <li>Oranges</li>
+    <li>Grapes</li>
+    <li>Strawberries</li>
+    <li>Watermelon</li>
+</ul>
+<h2>Event is Js</h2>
+<button onclick="alert('You Clicked!')">Clicke Me</button>
+<button class="btn1">Press Me!</button>
+<div class="guessNumber">
+    ?
+</div>
+<button class="guessBTN">Guess a Number</button>
+
+<section style="margin-top: 2em">
+    <button id="btnMouseEvent">Clicke here</button>
+    <p class="mouseOutEventDisplay">Message for mouse out </p>
+    <p class="doubleClickDisplay">Message for double click</p>
+</section>
+
+<div class="top">
+    <a href="#">&#127875;</a>
+</div>
+    <script src="day5.js"></script>
+</body>
+</html>

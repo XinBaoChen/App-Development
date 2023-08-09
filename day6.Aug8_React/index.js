@@ -35,15 +35,28 @@ const App = function() {
         <p style={styleJSX}>{divText}</p>
         {/* add a image with at least two inline styleJSX  below*/}
         <figure>
-   <img src={cat} style={{
-      width: "60%",
-      borderRadius: "10px",
-      boxShadow: "2px 2px 5px rgba(0, 0, 0, 0.3)",
-      border: "1px solid black",
-      margin: "1em"
-    }}
-  />
-</figure>
+        <img
+          src={cat}
+          style={{
+            width: "60%",
+            borderRadius: "10px",
+            boxShadow: "2px 2px 5px rgba(0, 0, 0, 0.3)",
+            border: "1px solid black",
+            margin: "1em",
+            boxSizing: "border-box"
+          }}
+        />
+        <figcaption
+          style={{
+            fontSize: "18px",
+            color: "blue",
+            textAlign: "center",
+            marginTop: "0.5em"
+          }}
+        >
+          Cute Kitten
+        </figcaption>
+      </figure>
     </div>
   );
 };

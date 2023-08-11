@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <!--Sematic Ui for React-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.css"/>
+    <style>
+      body{
+        padding: 1%;
+      }
+      .title{
+        color: darkslateblue;
+      }
+    /* card css */
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  padding: 20px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: black;
+  box-shadow: 0px 2px 5px rgba(15, 12, 12, 0.3);
+  transition: all 0.5s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 5px 10px rgba(8, 0, 0, 0.3);
+}
+
+.card img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.card p {
+  text-align: center;
+  margin: 0;
+}
+
+.card .title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.card .description {
+  font-size: 14px;
+  color: #666;
+}
+
+.card .highlight {
+  color: red;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1000px) {
+  .wrap {
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .tile {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .imgCard {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 720px) and (max-width: 990px) {
+  .wrap {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+
+  .tile {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 719px) {
+  .wrap {
+    justify-content: center;
+  }
+
+  .tile {
+    width: calc(50% - 20px);
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .wrap {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .tile {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .wrap {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .tile {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+    </style>
+    <title>XinBao Chen</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <h1 class="title">Props in React</h1>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>

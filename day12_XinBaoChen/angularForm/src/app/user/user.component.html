@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="form">
+        <!---Collect user name-->
+        <div class="form_group">
+            <label for="n">Name</label>
+            <input required pattern="[a-zA-Z]*" type="text" id="n" [(ngModel)]="newUser.name"  
+            name="username" #name="ngModel" (change)="displayLog(name)" minlength="3" maxlength="24"/>
+        </div>
+        <!-- error message -->
+        <div class ="validMsg" *ngIf="!name.valid && name.touched">
+            <p *ngIf="name.errors?.['required']">Enter a name</p>
+            <p *ngIf="name.errors?.['minlength']">Name must have at least 3 characters</p>
+            <p *ngIf="name.errors?.['pattern']">Name Must be only letters</p>
+        </div>
+        <!--Collect user email-->
+        <div class="form_group">
+            <label for="e">Email</label>
+            <input required type="email" id="e" [(ngModel)]="newUser.email" email="userEmail" 
+            #email ="ngModel" (change)="displayLog(email)" minilength = '4'/>
+            <div class ="validMsg" *ngIf="!email.valid && email.touched">
+                <p *ngIf="name.errors?.['required']">Email is required </p>
+                <p *ngIf="!email.valid">Invalid Email address</p>
+            </div>
+        </div>
+        <!--Submit button-->
+        <button class="submit_btn">Submit Button</button>
+
+         <!--Display JSON file-->
+         <div class="json_display">
+            <p>Result:</p>
+            <p>{{jsonUser}}</p>
+        </div>
+        </div>
+</div>
+

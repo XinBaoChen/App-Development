@@ -1,0 +1,36 @@
+<p>Angular Directives</p>
+<h2>nfIf Directive</h2>
+<p *ngIf ='model.getBooks().length > 0'>There are {{model.getBooks().length}} Books in stock</p>
+<p *ngIf = "model.getBooks().length == 0">Books sold out!</p>
+
+<h2>[hidden] property</h2>
+<p [hidden]="model.getBooks().length == 0">There are books in stock: {{model.getBooks().length}}</p>
+<p [hidden]="model.getBooks().length != 0">There aren't book in stock</p>
+
+<h2>ngSwitch Directive</h2>
+<div [ngSwitch] = 'model.getBooks().length'>
+    <span *ngSwitchCase = "0"> There aren't book in stock </span>
+    <span *ngSwitchCase = "1"> There are 1 book in stock </span>
+    <span *ngSwitchCase = "2"> There are 2 book in stock </span>
+    <span *ngSwitchDefault > There are more than 2 book in stock </span>
+</div>
+
+
+<h2>nGFor Directive</h2>
+<ul *ngFor = "let book of model.getBooks(); index as i">
+    <p> Book {{i +1}}: <em>{{book.name}}</em> --- <b style="color: aquamarine;">{{book.price}}</b></p>
+</ul>
+
+<h2>Change Directive</h2>
+<button (click)="addBook()">Add Book!</button>
+<div *ngFor = "let book of model.getBooks(); index as i">
+    <p> Book {{i +1}}: <em>{{book.name}}</em> --- <b style="color: aquamarine;">{{book.price}}</b></p>
+<button (click)="deleteBook(book)">Remove Book  {{i+1}}</button>
+<button (click)="updateName(book)">Uodate Name</button>
+<button (click)="updatePrice(book)">Update Price</button>
+</div>
+
+<h2>Custom Directive</h2>
+<label>Enter an email address:
+    <input type="text" appEmail/>
+</label>
